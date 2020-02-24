@@ -20,7 +20,7 @@ POST
     - username = "client"
     - password = `your_api_key`
     
-- přes header, "api_key"
+- přes header, "Api-Key"
 
 ## Endpoints
 
