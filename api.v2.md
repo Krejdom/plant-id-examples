@@ -14,11 +14,13 @@ POST
 
 ## Authentication
 
-- "key" in POSTed data
+- "api_key" in POSTed data
 
- - [Basic authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
-    - username = `key`
+- [Basic authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
+    - username = "client"
     - password = `your_api_key`
+    
+- přes header, "api_key"
 
 ## Endpoints
 
@@ -39,7 +41,7 @@ get identification data by `id`
 
 POST
  - plant_language - default `en`
- - plant_details - 
+ - plant_details - list of plant KB view names
 
 ### /get_identification_result/custom_id/\<custom_id\>
 same as previous but for `custom_id`
@@ -68,9 +70,8 @@ POST
 DELETE
 
 
-### /confirm_suggestion
-### /unconfirm_suggestion
+### /confirm_suggestion/<id>
+### /unconfirm_suggestion/<id>
 
 
 ### /usage_info
-### /plant_info 
