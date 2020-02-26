@@ -1,6 +1,6 @@
 """
 The purpose of this code is to show how to work with plant.id API.
-You'll find API documentation at https://plant.id/api
+You'll find API documentation at https://github.com/Plant-id/plant-id-examples/wiki
 """
 
 import base64
